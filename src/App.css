@@ -1,38 +1,123 @@
+body{
+  background: black;
+}
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  text-align:center; 
+  background-color: darkblue;
+  padding : 0;
+  color: white;
+  margin : 0;
+  background: url(./images/background.gif); 
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  background-color: darkblue;
+  
+}
+
+li{
+  list-style: none;
+}
+
+button{
   flex-direction: column;
+  size: 100px;
+  color :brown;
+  background-color: beige;
+  border-radius: 20%;
+}
+#attaques{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  background: url(./images/fond-bouton.jpg); 
+}
+
+#choix-perso{
+  display: flex;
+  text-align: left;
+  padding : 10px;
+}
+
+#choix-perso-adverse{
+
+  padding-left: 500px;
+  text-align: right;
+  justify-content: right;
+}
+#choix-perso>button{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+img{
+  padding-top: 50px;
+  height: 300px
+}
+
+#images{
+  display: flex;
+  margin-left: 70px; 
+}
+#image-adverse{
+  margin-left: 500px;
+  transform: scaleX(-1);
+}
+
+#pv-adverse{
+  transform: scaleX(-1)
+}
+
+.lancement{
+  display: flex ;
+  padding : 10px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#health {
+  margin-top: 50px;
+  width: 100%;  
+  height: 10px;  
+  background-color: #ccc; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#health::-webkit-progress-value {
+  background-color: #ff5733;
+}
+
+#health::-moz-progress-bar {
+  background-color: #ff5733;
+}
+
+#start{
+  flex-direction: column;
+  color :red;
+  background-color: black;
+  border-radius: 20%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+  text-shadow:0 4px 0 black, 0 -4px 0 #ff4045;
+}
+
+#attaque4{
+  flex-direction:row;
+  margin-right: 0px;
+  color :red;
+  background-color: black;
+  border-radius: 20%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Attaque from './component/attaque';
+import Lancement from './component/lancement';
+import './images/luffy-pixel.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
         </a>
+      
       </header>
+      <main>
+      <div className = "attaque">
+        <Attaque />
+      </div>
+      </main>
     </div>
   );
 }
